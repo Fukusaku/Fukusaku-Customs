@@ -1,0 +1,18 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteRule zatrudnij-programiste-webowego portfolio_index.html
+RewriteRule kim-jestem kimjestem.html
+RewriteRule oferta-tworzenie-stron-www oferta.html
+RewriteRule cv-programista-php-javascript cv.html
+RewriteRule kontakt-programista-php kontakt.html
+
+php_value memory_limit 256M
+php_value upload_max_filesize 64M
+php_value post_max_size 64M
+php_value max_execution_time 300
+php_value max_input_time 1000
