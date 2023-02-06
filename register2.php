@@ -52,7 +52,7 @@
 			$_SESSION['e_terms']="Accept terms&conditions";
 		}
 
-		$sekret='6LfkIpMhAAAAANaua-jHh724i1bTOK19Ei_UdWoS';
+		$sekret='????????';
 		
 		$sprawdz=file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$sekret.'&response='.$_POST['g-recaptcha-response']);
 
