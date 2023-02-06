@@ -26,7 +26,7 @@
 		
 		$pass_hash2=password_hash($pass1,PASSWORD_DEFAULT);
 		
-		$sekret='6LfkIpMhAAAAANaua-jHh724i1bTOK19Ei_UdWoS';
+		$sekret='?????????';
 		
 		$sprawdz=file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$sekret.'&response='.$_POST['g-recaptcha-response']);
 
